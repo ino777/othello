@@ -43,7 +43,7 @@ class OthelloDirector(GameDirector):
     def __init__(self, board:OthelloBoard, black, white, *args, **kwargs):
         if not (type(black) == User or type(black) == Computer
         or type(white) == User or type(white) == Computer):
-            raise TypeError('black and white required to be User or Computer class')
+            raise TypeError('black and white required to be User or Computer object')
 
         self.board = board
         self.black = black
